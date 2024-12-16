@@ -123,14 +123,14 @@ else:
     print(f"[*] EncPass:  "+sys.argv[4])
 
 if len(sys.argv) == 5:
-    cipher = MobaXtermCrypto(sys.argv[1].encode('ansi'), sys.argv[2].encode('ansi') , sys.argv[3].encode('ansi'))
+    cipher = MobaXtermCrypto(sys.argv[1].encode('cp1252'), sys.argv[2].encode('cp1252') , sys.argv[3].encode('cp1252'))
     passw = cipher.DecryptCredential(sys.argv[4])
     print(f'[*] Password: %s' % passw.decode("ascii"))
     sys.exit(1) 
 if len(sys.argv) == 7:
     print(f"[*] Host/IP:  "+sys.argv[5])
     print(f"[*] User:     "+sys.argv[6])
-    cipher = MobaXtermCrypto(sys.argv[1].encode('ansi'), sys.argv[2].encode('ansi') , sys.argv[3].encode('ansi'))
-    passw = cipher.DecryptPassword(sys.argv[4], sys.argv[5].encode('ansi'), sys.argv[6].encode('ansi'))
+    cipher = MobaXtermCrypto(sys.argv[1].encode('cp1252'), sys.argv[2].encode('cp1252') , sys.argv[3].encode('cp1252'))
+    passw = cipher.DecryptPassword(sys.argv[4], sys.argv[5].encode('cp1252'), sys.argv[6].encode('cp1252'))
     print(f'[*] Password: %s' % passw.decode("ascii"))
     sys.exit(1) 
