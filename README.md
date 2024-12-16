@@ -1,5 +1,5 @@
-## Account moved to: https://gitlab.com/illwill 
-
+## About this fork
+This fork just changes string encoding format to make it work under Linux.
  
 ![alt text](https://i.imgur.com/bUzFv0g.png)
 ## What's it do?
